@@ -8,6 +8,6 @@ compatibility_date = "2026-11-15"
 # then uncomment the block below, paste the returned id, and redeploy.
 # Until then the Worker falls back to an in-memory store (works, but does not
 # survive isolate restarts — see GET /health kvConfigured flag).
-# [[kv_namespaces]]
-# binding = "GATEKEEPER_KV"
-# id = "PASTE_KV_NAMESPACE_ID_HERE"
+ [[kv_namespaces]]
+ binding = "GATEKEEPER_KV"
+ id = "a0f110fe51104973a2f6776c62af5973"
