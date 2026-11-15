@@ -1,0 +1,13 @@
+name = "agent-games-gatekeeper"
+main = "src/index.js"
+compatibility_date = "2026-11-15"
+
+# Workers KV is required for reliable PROOF_REUSED detection + idempotency.
+# Create it after the first deploy (needs Cloudflare auth):
+#   wrangler kv namespace create GATEKEEPER_KV
+# then uncomment the block below, paste the returned id, and redeploy.
+# Until then the Worker falls back to an in-memory store (works, but does not
+# survive isolate restarts — see GET /health kvConfigured flag).
+# [[kv_namespaces]]
+# binding = "GATEKEEPER_KV"
+# id = "PASTE_KV_NAMESPACE_ID_HERE"

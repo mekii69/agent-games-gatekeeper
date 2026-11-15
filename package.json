@@ -1,0 +1,1 @@
+{"description":"widongoo — Proof Gatekeeper agent for Agent Games (zkVerify). Decision-only Cloudflare Worker, no proof generation.","devDependencies":{"wrangler":"^4.0.0"},"name":"agent-games-gatekeeper","private":true,"scripts":{"deploy":"wrangler deploy","dev":"wrangler dev","test":"node --test test/decide.test.js"},"type":"module","version":"1.0.0"}
